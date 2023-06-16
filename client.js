@@ -14,6 +14,14 @@
 // 3. painting
 // Total hobbies: 3
 
+let hobbies = ['drawing', 'gaming', 'cooking', 'sky diving'];
+
+for (index of hobbies) {
+    console.log(index);
+}
+
+console.log('Total hobbies:' ,hobbies.length);
+
 /**
  * #2 Colors
  * ---------
@@ -29,6 +37,17 @@
 // Example output
 // green, red, teal, orange, teal
 // Teal was found 2 times
+
+let colors = ['blue', 'red', 'green', 'teal', 'teal'];
+
+let tealCount = 0;
+
+for (i = 0; i < colors.length; i += 1) {
+    if (colors[i] === 'teal') {
+        tealCount += 1
+    }
+}
+console.log('Teal was found', tealCount);
 
 
 /**
@@ -47,6 +66,20 @@
 // Odd 3, 7, 11
 // Even 2, 8, 4, 2
 
+let numbers = [2, 3, 7, 9, 4, 6];
+
+let oddNumbers = [];
+let evenNumbers = [];
+
+for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i]%2 == 0) {
+       evenNumbers.push(numbers[i]) 
+    } else {
+        oddNumbers.push(numbers[i])
+    }
+}
+    console.log('Odd:', oddNumbers);
+    console.log('Even:', evenNumbers);
 
 /**
  * #4 Flipping Switches
@@ -73,11 +106,19 @@
  * 3. Output the array
  */
 
-
 // Example output
 // Before loop 3, 0, 2, 8, 0, 0, 0
 // After loop 3, 0, 2, 8
 
+let allNumbers = [2, 3, 0, 4, 5, 1, 0, 0, 0];
+
+for (let i = 0; i < allNumbers.length; i ++) {
+    if (allNumbers[i] === 0) {
+        allNumbers.pop[i];
+    }
+}
+
+console.log(allNumbers);
 
 /**
  * #6 (STRETCH) Greatest Position Distance
