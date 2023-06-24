@@ -95,6 +95,23 @@ for (let i = 0; i < numbers.length; i++) {
 // true, false, true, true
 // Toggled false, true, false, false
 
+let booleanArray = [true, false, true, false, false];
+let toggledArray = [];
+
+console.log(booleanArray);
+
+for  (let i = 0; i < booleanArray.length; i++) {
+       if (booleanArray[i] == true) {
+        booleanArray[i] = false;
+        toggledArray.push(booleanArray[i]);
+     } else {
+        if (booleanArray[i] == false) {
+            booleanArray[i] = true;
+            toggledArray.push(booleanArray[i]); 
+        }
+    }
+}
+console.log(toggledArray);
 
 /**
  * #5 (STRETCH) Remove 0's
@@ -110,15 +127,16 @@ for (let i = 0; i < numbers.length; i++) {
 // Before loop 3, 0, 2, 8, 0, 0, 0
 // After loop 3, 0, 2, 8
 
-let allNumbers = [2, 3, 0, 4, 5, 1, 0, 0, 0];
+let allNumbers = [2, 3, 0, 4, 5, 1, 0, 0, 0, 0, 0, 0];
+let lastArray = allNumbers[allNumbers.length - 1]
 
-for (let i = 0; i < allNumbers.length; i ++) {
-    if (allNumbers[i] === 0) {
-        allNumbers.pop[i];
+for (let i = 0; i < allNumbers.length; i++) {
+    if (lastArray === 0) {
+        allNumbers.pop();
     }
 }
-
 console.log(allNumbers);
+
 
 /**
  * #6 (STRETCH) Greatest Position Distance
@@ -132,7 +150,7 @@ console.log(allNumbers);
  * 3. Output the array and its greatest position distance
  */
 
-
+/*
 // Example output
 // 5, 1, 8, 2, 9, 1, 4, 5, 0
-// Greatest Position Distance: 7
+// Greatest Position Distance: 7 */
